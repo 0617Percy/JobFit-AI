@@ -1,0 +1,150 @@
+[
+  {
+    "case_id": "G-AI-01",
+    "title": "Synthetic AI application intern strong fit",
+    "job_family": "ai_application",
+    "acceptance_mode": "range",
+    "fixture_frozen_before_score": true,
+    "requirements": [
+      {"capability": "Python application delivery", "level": "L4"},
+      {"capability": "Model API integration", "level": "L4"},
+      {"capability": "Structured output validation", "level": "L4"},
+      {"capability": "AI evaluation", "level": "L4"}
+    ]
+  },
+  {
+    "case_id": "G-AI-02",
+    "title": "Synthetic AI application intern evaluation gap",
+    "job_family": "ai_application",
+    "acceptance_mode": "guard",
+    "fixture_frozen_before_score": true,
+    "requirements": [
+      {"capability": "Python application delivery", "level": "L4", "importance": "critical", "critical": true},
+      {"capability": "Model API integration", "level": "L4", "importance": "critical", "critical": true},
+      {"capability": "Structured output validation", "level": "L4", "importance": "critical", "critical": true},
+      {"capability": "AI evaluation", "level": null, "importance": "critical", "critical": true}
+    ]
+  },
+  {
+    "case_id": "G-AI-03",
+    "title": "Synthetic AI application intern weak foundation",
+    "job_family": "ai_application",
+    "acceptance_mode": "range",
+    "fixture_frozen_before_score": true,
+    "requirements": [
+      {"capability": "Python application delivery", "level": "L2", "importance": "critical", "critical": true},
+      {"capability": "Agent workflow implementation", "level": null, "importance": "critical", "critical": true},
+      {"capability": "Model API integration", "level": null, "importance": "critical", "critical": true}
+    ]
+  },
+  {
+    "case_id": "G-DA-01",
+    "title": "Synthetic data analytics intern strong fit",
+    "job_family": "data_analytics",
+    "acceptance_mode": "range",
+    "fixture_frozen_before_score": true,
+    "requirements": [
+      {"capability": "SQL analysis", "level": "L4"},
+      {"capability": "Data cleaning", "level": "L4"},
+      {"capability": "Business metrics", "level": "L4"},
+      {"capability": "Analysis communication", "level": "L4"}
+    ]
+  },
+  {
+    "case_id": "G-DA-02",
+    "title": "Synthetic data analytics intern SQL gap",
+    "job_family": "data_analytics",
+    "acceptance_mode": "range",
+    "fixture_frozen_before_score": true,
+    "requirements": [
+      {"capability": "SQL analysis", "level": "L1", "importance": "critical", "critical": true},
+      {"capability": "Data cleaning", "level": "L4", "importance": "critical", "critical": true},
+      {"capability": "Business metrics", "level": "L4", "importance": "critical", "critical": true},
+      {"capability": "Analysis communication", "level": "L4", "importance": "critical", "critical": true}
+    ]
+  },
+  {
+    "case_id": "G-DA-03",
+    "title": "Synthetic data analytics intern limited fit",
+    "job_family": "data_analytics",
+    "acceptance_mode": "range",
+    "fixture_frozen_before_score": true,
+    "requirements": [
+      {"capability": "Statistical analysis", "level": "L2", "importance": "critical", "critical": true},
+      {"capability": "Spreadsheet analysis", "level": "L2", "importance": "critical", "critical": true},
+      {"capability": "Business insight", "level": null, "importance": "critical", "critical": true},
+      {"capability": "SQL analysis", "level": "L1", "importance": "critical", "critical": true}
+    ]
+  },
+  {
+    "case_id": "G-TS-01",
+    "title": "Synthetic technology strategy intern strong fit",
+    "job_family": "technology_strategy",
+    "acceptance_mode": "range",
+    "fixture_frozen_before_score": true,
+    "requirements": [
+      {"capability": "Technology research", "level": "L4"},
+      {"capability": "Industry analysis", "level": "L4"},
+      {"capability": "Commercial reasoning", "level": "L4"},
+      {"capability": "Executive communication", "level": "L4"}
+    ]
+  },
+  {
+    "case_id": "G-TS-02",
+    "title": "Synthetic technology strategy intern developing fit",
+    "job_family": "technology_strategy",
+    "acceptance_mode": "range",
+    "fixture_frozen_before_score": true,
+    "requirements": [
+      {"capability": "Technology research", "level": "L4"},
+      {"capability": "Industry analysis", "level": "L3"},
+      {"capability": "Executive communication", "level": "L2"}
+    ]
+  },
+  {
+    "case_id": "G-TS-03",
+    "title": "Synthetic technology strategy intern transferable evidence",
+    "job_family": "technology_strategy",
+    "acceptance_mode": "range",
+    "fixture_frozen_before_score": true,
+    "requirements": [
+      {"capability": "Technology research", "level": "L4", "importance": "critical", "critical": true},
+      {"capability": "Industry analysis", "level": "L4", "importance": "high", "support": "transferable", "coverage": "substantial"},
+      {"capability": "Commercial reasoning", "level": null, "importance": "critical", "critical": true},
+      {"capability": "Executive communication", "level": "L2", "importance": "medium"}
+    ]
+  },
+  {
+    "case_id": "G-HARD-01",
+    "title": "Synthetic hard eligibility guard",
+    "job_family": "other",
+    "acceptance_mode": "guard",
+    "fixture_frozen_before_score": true,
+    "requirements": [
+      {"capability": "Core delivery ability", "level": "L4"},
+      {"capability": "Core collaboration ability", "level": "L4"}
+    ]
+  },
+  {
+    "case_id": "G-KNOW-01",
+    "title": "Synthetic knowledge invariance pair",
+    "job_family": "ai_application",
+    "acceptance_mode": "relational",
+    "fixture_frozen_before_score": true,
+    "requirements": [
+      {"capability": "Core application ability", "level": "L4"},
+      {"capability": "Core evaluation ability", "level": "L3"}
+    ]
+  },
+  {
+    "case_id": "G-SAFE-01",
+    "title": "Synthetic embedded instruction safety pair",
+    "job_family": "ai_application",
+    "acceptance_mode": "relational",
+    "fixture_frozen_before_score": true,
+    "requirements": [
+      {"capability": "Core application ability", "level": "L4"},
+      {"capability": "Core evaluation ability", "level": "L3"}
+    ]
+  }
+]

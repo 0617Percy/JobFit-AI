@@ -1,0 +1,128 @@
+[
+  {
+    "source_id": "ks-ai-anthropic-effective-agents",
+    "role_profile_id": "rp-ai-application-intern",
+    "knowledge_version_id": "kbv-2026-08-1",
+    "relation_type": "supports"
+  },
+  {
+    "source_id": "ks-ai-google-managing-ml-projects",
+    "role_profile_id": "rp-ai-application-intern",
+    "knowledge_version_id": "kbv-2026-08-1",
+    "relation_type": "supports"
+  },
+  {
+    "source_id": "ks-ai-microsoft-ai-103",
+    "role_profile_id": "rp-ai-application-intern",
+    "knowledge_version_id": "kbv-2026-08-1",
+    "relation_type": "supports"
+  },
+  {
+    "source_id": "ks-ai-nist-rmf-1-0",
+    "role_profile_id": "rp-ai-application-intern",
+    "knowledge_version_id": "kbv-2026-08-1",
+    "relation_type": "background"
+  },
+  {
+    "source_id": "ks-ai-openai-applied-agent",
+    "role_profile_id": "rp-ai-application-intern",
+    "knowledge_version_id": "kbv-2026-08-1",
+    "relation_type": "supports"
+  },
+  {
+    "source_id": "ks-ai-openai-emerging-talent",
+    "role_profile_id": "rp-ai-application-intern",
+    "knowledge_version_id": "kbv-2026-08-1",
+    "relation_type": "supports"
+  },
+  {
+    "source_id": "ks-ai-skills-england-st0763",
+    "role_profile_id": "rp-ai-application-intern",
+    "knowledge_version_id": "kbv-2026-08-1",
+    "relation_type": "contrasts"
+  },
+  {
+    "source_id": "ks-da-amazon-bi-intern-3149400",
+    "relation_type": "supports",
+    "role_profile_id": "rp-data-analyst-intern",
+    "knowledge_version_id": "kbv-2026-08-1"
+  },
+  {
+    "source_id": "ks-da-apple-japan-data-analyst-intern",
+    "relation_type": "supports",
+    "role_profile_id": "rp-data-analyst-intern",
+    "knowledge_version_id": "kbv-2026-08-1"
+  },
+  {
+    "source_id": "ks-da-bls-operations-research",
+    "relation_type": "contrasts",
+    "role_profile_id": "rp-data-analyst-intern",
+    "knowledge_version_id": "kbv-2026-08-1"
+  },
+  {
+    "source_id": "ks-da-google-data-analytics-certificate",
+    "relation_type": "background",
+    "role_profile_id": "rp-data-analyst-intern",
+    "knowledge_version_id": "kbv-2026-08-1"
+  },
+  {
+    "source_id": "ks-da-microsoft-pl-300",
+    "relation_type": "supports",
+    "role_profile_id": "rp-data-analyst-intern",
+    "knowledge_version_id": "kbv-2026-08-1"
+  },
+  {
+    "source_id": "ks-da-onet-bi-analysts",
+    "relation_type": "supports",
+    "role_profile_id": "rp-data-analyst-intern",
+    "knowledge_version_id": "kbv-2026-08-1"
+  },
+  {
+    "source_id": "ks-da-skills-england-st0118",
+    "relation_type": "supports",
+    "role_profile_id": "rp-data-analyst-intern",
+    "knowledge_version_id": "kbv-2026-08-1"
+  },
+  {
+    "source_id": "ks-ts-amazon-wwtd-strategy-2990306",
+    "relation_type": "supports",
+    "role_profile_id": "rp-technology-strategy-intern",
+    "knowledge_version_id": "kbv-2026-08-1"
+  },
+  {
+    "source_id": "ks-ts-bcg-digital-consultant",
+    "relation_type": "background",
+    "role_profile_id": "rp-technology-strategy-intern",
+    "knowledge_version_id": "kbv-2026-08-1"
+  },
+  {
+    "source_id": "ks-ts-jrc-technology-foresight-2023",
+    "relation_type": "supports",
+    "role_profile_id": "rp-technology-strategy-intern",
+    "knowledge_version_id": "kbv-2026-08-1"
+  },
+  {
+    "source_id": "ks-ts-oecd-sti-outlook-2025",
+    "relation_type": "supports",
+    "role_profile_id": "rp-technology-strategy-intern",
+    "knowledge_version_id": "kbv-2026-08-1"
+  },
+  {
+    "source_id": "ks-ts-openai-competitive-intelligence",
+    "relation_type": "supports",
+    "role_profile_id": "rp-technology-strategy-intern",
+    "knowledge_version_id": "kbv-2026-08-1"
+  },
+  {
+    "source_id": "ks-ts-uk-futures-toolkit-2024",
+    "relation_type": "supports",
+    "role_profile_id": "rp-technology-strategy-intern",
+    "knowledge_version_id": "kbv-2026-08-1"
+  },
+  {
+    "source_id": "ks-ts-wef-future-jobs-2025",
+    "relation_type": "background",
+    "role_profile_id": "rp-technology-strategy-intern",
+    "knowledge_version_id": "kbv-2026-08-1"
+  }
+]

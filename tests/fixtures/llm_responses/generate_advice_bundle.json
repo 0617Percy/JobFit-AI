@@ -1,0 +1,110 @@
+{
+  "strengths": [
+    {
+      "title": "Python数据处理证据",
+      "summary": "简历明确写明使用Python完成数据处理。",
+      "requirement_ids": ["req-python"],
+      "evidence_ids": ["ev-python"],
+      "why_it_matters": "该证据对应岗位的高权重技术要求。"
+    },
+    {
+      "title": "机器学习课程项目基础",
+      "summary": "课程项目提供了相关基础，但不等同于生产部署经验。",
+      "requirement_ids": ["req-production"],
+      "evidence_ids": ["ev-course"],
+      "why_it_matters": "可作为继续补充真实工程实践的起点。"
+    }
+  ],
+  "gaps": [
+    {
+      "title": "生产级部署证据不足",
+      "summary": "现有证据来自课程项目，不能证明生产级部署经验。",
+      "requirement_ids": ["req-production"],
+      "remediability": "learning_practice",
+      "risk_level": "high",
+      "recommended_action": "通过真实部署练习补充可验证证据。",
+      "user_confirmation_needed": false
+    },
+    {
+      "title": "Java明确缺口",
+      "summary": "简历明确写明没有Java经验。",
+      "requirement_ids": ["req-java"],
+      "remediability": "learning_practice",
+      "risk_level": "high",
+      "recommended_action": "仅在岗位确有需要时安排真实学习和实践。",
+      "user_confirmation_needed": false
+    },
+    {
+      "title": "SQL证据待确认",
+      "summary": "当前简历未提供足够证据确认SQL能力。",
+      "requirement_ids": ["req-sql"],
+      "remediability": "evidence_needed",
+      "risk_level": "high",
+      "recommended_action": "确认是否已有SQL经历，并仅补充真实证据。",
+      "user_confirmation_needed": true
+    }
+  ],
+  "recommendation_reasoning": [
+    "[req-python] 已有明确Python数据处理证据。",
+    "[req-production] 生产级经验仍需要真实实践补充。",
+    "[req-sql] 当前只能判断为证据不足。"
+  ],
+  "rewrite_suggestions": [
+    {
+      "original_text": "使用Python完成数据处理",
+      "rewritten_text": "使用 Python 完成数据处理，清晰呈现技术行动。",
+      "reason": "改善语序和关键词可读性，不改变原事实。",
+      "requirement_ids": ["req-python"],
+      "evidence_ids": ["ev-python"],
+      "introduced_claims": [],
+      "user_confirmation_needed": []
+    }
+  ],
+  "interview_questions": [
+    {
+      "question": "请深入介绍课程项目中的机器学习方法与个人行动。",
+      "intent": "核心项目深挖，核对真实参与范围。",
+      "answer_framework": ["说明背景", "说明个人行动", "说明已验证结果"],
+      "resume_evidence_ids": ["ev-course"],
+      "requirement_ids": ["req-production"],
+      "emphasis": ["只引用课程项目事实"],
+      "risks_to_avoid": ["不要表述为生产部署"]
+    },
+    {
+      "question": "Python数据处理采用了什么技术方法？",
+      "intent": "考察核心技术与方法理解。",
+      "answer_framework": ["说明输入", "说明处理步骤", "说明验证方式"],
+      "resume_evidence_ids": ["ev-python"],
+      "requirement_ids": ["req-python"],
+      "emphasis": [],
+      "risks_to_avoid": []
+    },
+    {
+      "question": "如果面向真实业务场景，你会如何设计机器学习交付方案？",
+      "intent": "考察岗位场景和业务理解，不假定已有生产经验。",
+      "answer_framework": ["澄清需求", "提出方案", "说明风险"],
+      "resume_evidence_ids": [],
+      "requirement_ids": ["req-production"],
+      "emphasis": [],
+      "risks_to_avoid": ["不要虚构生产经验"]
+    },
+    {
+      "question": "当前简历没有SQL证据，你准备如何验证或补足这一缺口？",
+      "intent": "核验主要缺口与学习计划。",
+      "answer_framework": ["诚实说明现状", "给出验证方式", "给出实践计划"],
+      "resume_evidence_ids": [],
+      "requirement_ids": ["req-sql"],
+      "emphasis": [],
+      "risks_to_avoid": ["不要把未证明描述为不会"]
+    },
+    {
+      "question": "如果与团队协作推进项目，你会如何沟通、复盘并处理分歧？",
+      "intent": "考察协作、复盘和求职动机。",
+      "answer_framework": ["说明协作原则", "说明复盘结构", "避免虚构案例"],
+      "resume_evidence_ids": [],
+      "requirement_ids": ["req-python"],
+      "emphasis": [],
+      "risks_to_avoid": ["没有真实案例时使用假设式回答"]
+    }
+  ]
+}

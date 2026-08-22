@@ -1,0 +1,2 @@
+*.pdf binary
+src/jobfit/prompts/v2/*.md text eol=lf

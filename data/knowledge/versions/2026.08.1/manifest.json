@@ -1,0 +1,15 @@
+{
+  "schema_version": "1.0",
+  "files": [
+    "knowledge_base_version.json",
+    "job_families.json",
+    "role_profiles.json",
+    "competency_dimensions.json",
+    "role_requirements.json",
+    "evidence_patterns.json",
+    "knowledge_sources.json",
+    "knowledge_chunks.json",
+    "interview_questions.json",
+    "source_role_links.json"
+  ]
+}

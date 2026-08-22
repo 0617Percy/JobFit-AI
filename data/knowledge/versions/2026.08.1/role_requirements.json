@@ -1,0 +1,1503 @@
+[
+  {
+    "id": "kr-ai-agent-workflow",
+    "role_profile_id": "rp-ai-application-intern",
+    "competency_dimension_id": "cd-ai-agent-workflow",
+    "title": "构建边界清楚的Agent或任务工作流",
+    "description": "能够把多步骤任务拆成模型调用、工具调用、确定性规则和人工确认点，并说明为什么采用Agent或工作流而不是单次调用。",
+    "requirement_type": "responsibility",
+    "importance": "medium",
+    "is_common_hard_blocker": false,
+    "expected_evidence": [
+      "包含步骤、工具、状态或失败处理的工作流项目",
+      "说明Agent与固定流程选择依据的项目记录"
+    ],
+    "weak_evidence": [
+      "仅写使用过Agent框架",
+      "没有说明任务拆解或工具边界"
+    ],
+    "negative_signals": [
+      "把所有任务都默认设计为自主Agent",
+      "无法说明失败后如何停止或回退"
+    ],
+    "keywords": [
+      "agent",
+      "tool use",
+      "workflow",
+      "任务编排"
+    ],
+    "source_id": "ks-ai-anthropic-effective-agents",
+    "knowledge_version_id": "kbv-2026-08-1",
+    "review_status": "approved",
+    "is_active": true
+  },
+  {
+    "id": "kr-ai-business-task-framing",
+    "role_profile_id": "rp-ai-application-intern",
+    "competency_dimension_id": "cd-ai-business-understanding",
+    "title": "把业务问题转化为可验证的AI任务",
+    "description": "能够识别目标用户、业务约束和成功标准，把模糊需求转化为输入、输出、评价方法和非目标清楚的AI应用任务。",
+    "requirement_type": "responsibility",
+    "importance": "high",
+    "is_common_hard_blocker": false,
+    "expected_evidence": [
+      "从业务目标推导功能和评价标准的项目说明",
+      "记录需求边界、非目标和验收结果"
+    ],
+    "weak_evidence": [
+      "只描述技术实现而没有业务目标",
+      "只声称提升效率但没有定义衡量方式"
+    ],
+    "negative_signals": [
+      "把模型能力直接等同于业务价值",
+      "没有识别不适合使用AI的环节"
+    ],
+    "keywords": [
+      "business goal",
+      "success criteria",
+      "task framing",
+      "业务需求"
+    ],
+    "source_id": "ks-ai-google-managing-ml-projects",
+    "knowledge_version_id": "kbv-2026-08-1",
+    "review_status": "approved",
+    "is_active": true
+  },
+  {
+    "id": "kr-ai-collaboration-iteration",
+    "role_profile_id": "rp-ai-application-intern",
+    "competency_dimension_id": "cd-ai-communication-collaboration",
+    "title": "在反馈中协作和迭代",
+    "description": "能够与技术或业务伙伴同步假设、风险和结果，根据反馈调整实现，并清楚区分个人贡献与团队成果。",
+    "requirement_type": "implicit",
+    "importance": "medium",
+    "is_common_hard_blocker": false,
+    "expected_evidence": [
+      "说明评审反馈如何改变方案的项目经历",
+      "清楚描述本人职责和协作接口"
+    ],
+    "weak_evidence": [
+      "只写参与团队项目",
+      "没有说明沟通对象或迭代内容"
+    ],
+    "negative_signals": [
+      "把团队成果全部表述为个人完成",
+      "无法说明如何处理不同意见"
+    ],
+    "keywords": [
+      "collaboration",
+      "feedback",
+      "iteration",
+      "团队协作"
+    ],
+    "source_id": "ks-ai-openai-emerging-talent",
+    "knowledge_version_id": "kbv-2026-08-1",
+    "review_status": "approved",
+    "is_active": true
+  },
+  {
+    "id": "kr-ai-data-processing",
+    "role_profile_id": "rp-ai-application-intern",
+    "competency_dimension_id": "cd-ai-data-processing",
+    "title": "处理文本、JSON与业务数据",
+    "description": "能够整理和校验模型输入及业务数据，处理文本和JSON等常见格式，并识别缺失、异常或不适合直接发送给模型的数据。",
+    "requirement_type": "responsibility",
+    "importance": "high",
+    "is_common_hard_blocker": false,
+    "expected_evidence": [
+      "包含数据清洗、转换和校验步骤的项目",
+      "说明异常数据处理和输出格式的实现"
+    ],
+    "weak_evidence": [
+      "只列出数据处理工具",
+      "没有说明输入质量或格式验证"
+    ],
+    "negative_signals": [
+      "未区分公开数据与敏感数据",
+      "将未校验的数据直接用于模型调用"
+    ],
+    "keywords": [
+      "data validation",
+      "json",
+      "text processing",
+      "数据清洗"
+    ],
+    "source_id": "ks-ai-skills-england-st0763",
+    "knowledge_version_id": "kbv-2026-08-1",
+    "review_status": "approved",
+    "is_active": true
+  },
+  {
+    "id": "kr-ai-deployment-integration",
+    "role_profile_id": "rp-ai-application-intern",
+    "competency_dimension_id": "cd-ai-deployment-integration",
+    "title": "了解应用集成与基础运行维护",
+    "description": "了解如何把AI能力接入应用或服务，包括接口边界、配置、超时、失败提示、基础监控和可回退行为。",
+    "requirement_type": "preferred",
+    "importance": "medium",
+    "is_common_hard_blocker": false,
+    "expected_evidence": [
+      "将模型能力接入可运行应用或服务",
+      "包含配置、错误处理或基础监控的部署记录"
+    ],
+    "weak_evidence": [
+      "只写完成本地演示",
+      "只列出云平台或部署工具名称"
+    ],
+    "negative_signals": [
+      "在代码中硬编码凭据",
+      "服务失败时没有安全提示或回退"
+    ],
+    "keywords": [
+      "deployment",
+      "integration",
+      "monitoring",
+      "service"
+    ],
+    "source_id": "ks-ai-microsoft-ai-103",
+    "knowledge_version_id": "kbv-2026-08-1",
+    "review_status": "approved",
+    "is_active": true
+  },
+  {
+    "id": "kr-ai-evaluation-design",
+    "role_profile_id": "rp-ai-application-intern",
+    "competency_dimension_id": "cd-ai-evaluation-debugging",
+    "title": "设计基础评估方法",
+    "description": "能够根据任务目标选择可解释的样例、指标或人工检查方法，比较改动前后结果并记录评估边界。",
+    "requirement_type": "responsibility",
+    "importance": "high",
+    "is_common_hard_blocker": false,
+    "expected_evidence": [
+      "包含测试集、评价标准和比较结果的项目",
+      "说明自动指标与人工检查各自限制"
+    ],
+    "weak_evidence": [
+      "只写效果良好",
+      "只展示少量成功样例"
+    ],
+    "negative_signals": [
+      "在没有标准时宣称准确率很高",
+      "只调参而不记录比较条件"
+    ],
+    "keywords": [
+      "evaluation",
+      "metric",
+      "test set",
+      "人工评估"
+    ],
+    "source_id": "ks-ai-google-managing-ml-projects",
+    "knowledge_version_id": "kbv-2026-08-1",
+    "review_status": "approved",
+    "is_active": true
+  },
+  {
+    "id": "kr-ai-model-api-integration",
+    "role_profile_id": "rp-ai-application-intern",
+    "competency_dimension_id": "cd-ai-model-api-integration",
+    "title": "通过API集成模型或AI服务",
+    "description": "能够通过受控接口调用模型或AI服务，处理请求参数、响应、超时和可恢复错误，并避免把供应商特有接口当作通用能力。",
+    "requirement_type": "responsibility",
+    "importance": "high",
+    "is_common_hard_blocker": false,
+    "expected_evidence": [
+      "包含真实模型或AI服务调用流程的项目",
+      "说明请求、响应、超时和错误处理"
+    ],
+    "weak_evidence": [
+      "只列出模型或平台名称",
+      "只展示一次成功调用"
+    ],
+    "negative_signals": [
+      "把凭据写入代码或报告",
+      "未处理失败请求或限流"
+    ],
+    "keywords": [
+      "api",
+      "model service",
+      "retry",
+      "timeout"
+    ],
+    "source_id": "ks-ai-microsoft-ai-103",
+    "knowledge_version_id": "kbv-2026-08-1",
+    "review_status": "approved",
+    "is_active": true
+  },
+  {
+    "id": "kr-ai-model-limitations",
+    "role_profile_id": "rp-ai-application-intern",
+    "competency_dimension_id": "cd-ai-model-application",
+    "title": "理解模型局限与不可靠输出",
+    "description": "能够说明模型可能产生幻觉、遗漏、偏差或不稳定结果，并为高风险场景设置验证、拒绝或人工确认机制。",
+    "requirement_type": "responsibility",
+    "importance": "high",
+    "is_common_hard_blocker": false,
+    "expected_evidence": [
+      "项目中记录模型失败类型和控制措施",
+      "说明何时需要人工确认或拒绝输出"
+    ],
+    "weak_evidence": [
+      "只写了解大模型幻觉",
+      "没有把风险与具体场景连接"
+    ],
+    "negative_signals": [
+      "把模型输出默认视为事实",
+      "在高风险决策中没有人工核对"
+    ],
+    "keywords": [
+      "hallucination",
+      "human review",
+      "model limitation",
+      "reliability"
+    ],
+    "source_id": "ks-ai-nist-rmf-1-0",
+    "knowledge_version_id": "kbv-2026-08-1",
+    "review_status": "approved",
+    "is_active": true
+  },
+  {
+    "id": "kr-ai-output-debugging",
+    "role_profile_id": "rp-ai-application-intern",
+    "competency_dimension_id": "cd-ai-evaluation-debugging",
+    "title": "调试失败和不稳定输出",
+    "description": "能够复现失败样例，区分输入、模型、工具和应用代码问题，并通过受控实验验证修复是否改善结果。",
+    "requirement_type": "responsibility",
+    "importance": "high",
+    "is_common_hard_blocker": false,
+    "expected_evidence": [
+      "说明失败现象、定位过程和验证结果",
+      "记录边界样例或回归测试"
+    ],
+    "weak_evidence": [
+      "只写优化Prompt",
+      "没有描述失败原因或验证方式"
+    ],
+    "negative_signals": [
+      "无法复现问题就直接更换模型",
+      "只展示成功结果而隐藏失败样例"
+    ],
+    "keywords": [
+      "debugging",
+      "failure analysis",
+      "regression test",
+      "稳定性"
+    ],
+    "source_id": "ks-ai-openai-applied-agent",
+    "knowledge_version_id": "kbv-2026-08-1",
+    "review_status": "approved",
+    "is_active": true
+  },
+  {
+    "id": "kr-ai-privacy-security",
+    "role_profile_id": "rp-ai-application-intern",
+    "competency_dimension_id": "cd-ai-responsible-ai-security",
+    "title": "遵守隐私、安全与数据边界",
+    "description": "能够识别敏感数据、凭据、权限和第三方服务边界，在发送、记录和展示数据时采用最小必要原则和安全失败方式。",
+    "requirement_type": "responsibility",
+    "importance": "high",
+    "is_common_hard_blocker": false,
+    "expected_evidence": [
+      "项目中说明数据分类、脱敏或访问控制",
+      "使用环境变量并避免在日志中输出敏感内容"
+    ],
+    "weak_evidence": [
+      "只写关注安全",
+      "没有说明数据发送给第三方服务的边界"
+    ],
+    "negative_signals": [
+      "在公开仓库提交真实凭据",
+      "把敏感输入或完整模型响应写入日志"
+    ],
+    "keywords": [
+      "data privacy",
+      "least privilege",
+      "security",
+      "数据边界"
+    ],
+    "source_id": "ks-ai-nist-rmf-1-0",
+    "knowledge_version_id": "kbv-2026-08-1",
+    "review_status": "approved",
+    "is_active": true
+  },
+  {
+    "id": "kr-ai-project-communication",
+    "role_profile_id": "rp-ai-application-intern",
+    "competency_dimension_id": "cd-ai-communication-collaboration",
+    "title": "清晰说明项目目标、方法与结果",
+    "description": "能够用面向技术或业务受众的方式说明项目目标、本人行动、评价结果、限制和下一步，而不是只罗列工具。",
+    "requirement_type": "responsibility",
+    "importance": "medium",
+    "is_common_hard_blocker": false,
+    "expected_evidence": [
+      "结构清楚的项目说明或技术文档",
+      "区分目标、行动、结果和限制"
+    ],
+    "weak_evidence": [
+      "只列出技术栈",
+      "只写负责AI项目"
+    ],
+    "negative_signals": [
+      "无法区分个人贡献和团队成果",
+      "对结果作无法验证的夸大"
+    ],
+    "keywords": [
+      "documentation",
+      "project explanation",
+      "technical communication",
+      "项目复盘"
+    ],
+    "source_id": "ks-ai-openai-emerging-talent",
+    "knowledge_version_id": "kbv-2026-08-1",
+    "review_status": "approved",
+    "is_active": true
+  },
+  {
+    "id": "kr-ai-prompt-design",
+    "role_profile_id": "rp-ai-application-intern",
+    "competency_dimension_id": "cd-ai-prompt-structured-output",
+    "title": "设计清楚且受约束的Prompt",
+    "description": "能够提供必要上下文、任务、限制和输出约定，并用样例或测试说明Prompt改动对结果的影响。",
+    "requirement_type": "responsibility",
+    "importance": "medium",
+    "is_common_hard_blocker": false,
+    "expected_evidence": [
+      "包含Prompt约束、样例和迭代依据的项目",
+      "说明输入边界与失败处理"
+    ],
+    "weak_evidence": [
+      "只写学习过Prompt工程",
+      "只展示最终Prompt而没有验证"
+    ],
+    "negative_signals": [
+      "把Prompt当作不可解释的固定诀窍",
+      "把不可信文本中的指令当作系统规则执行"
+    ],
+    "keywords": [
+      "instruction design",
+      "prompt",
+      "prompt injection",
+      "输入约束"
+    ],
+    "source_id": "ks-ai-anthropic-effective-agents",
+    "knowledge_version_id": "kbv-2026-08-1",
+    "review_status": "approved",
+    "is_active": true
+  },
+  {
+    "id": "kr-ai-python-implementation",
+    "role_profile_id": "rp-ai-application-intern",
+    "competency_dimension_id": "cd-ai-python-engineering",
+    "title": "使用Python或等价语言实现可运行的AI应用组件",
+    "description": "能够使用Python或等价语言组织数据流、调用模型接口、处理错误并编写可运行的应用组件，而不只停留在交互式演示。",
+    "requirement_type": "must_have",
+    "importance": "high",
+    "is_common_hard_blocker": false,
+    "expected_evidence": [
+      "包含本人实现代码和运行结果的AI应用项目",
+      "说明模块边界、错误处理或测试方法"
+    ],
+    "weak_evidence": [
+      "只在技能栏列出Python",
+      "只有课程名称或跟随式练习"
+    ],
+    "negative_signals": [
+      "无法说明本人实现的代码部分",
+      "项目描述只有模型名称而没有工程动作"
+    ],
+    "keywords": [
+      "application",
+      "error handling",
+      "python",
+      "testing"
+    ],
+    "source_id": "ks-ai-openai-applied-agent",
+    "knowledge_version_id": "kbv-2026-08-1",
+    "review_status": "approved",
+    "is_active": true
+  },
+  {
+    "id": "kr-ai-reproducible-development",
+    "role_profile_id": "rp-ai-application-intern",
+    "competency_dimension_id": "cd-ai-python-engineering",
+    "title": "保持可复现的开发记录",
+    "description": "能够记录输入、配置、代码版本和评价条件，使关键实验或功能结果可以复查，并避免依赖未说明的本地状态。",
+    "requirement_type": "preferred",
+    "importance": "medium",
+    "is_common_hard_blocker": false,
+    "expected_evidence": [
+      "有版本控制、环境说明和可重复运行步骤",
+      "记录关键配置与实验条件"
+    ],
+    "weak_evidence": [
+      "只提供截图而没有运行说明",
+      "结果依赖未记录的本地配置"
+    ],
+    "negative_signals": [
+      "无法复现主要结果",
+      "把临时缓存或凭据提交为项目依赖"
+    ],
+    "keywords": [
+      "configuration",
+      "reproducibility",
+      "version control",
+      "开发记录"
+    ],
+    "source_id": "ks-ai-google-managing-ml-projects",
+    "knowledge_version_id": "kbv-2026-08-1",
+    "review_status": "approved",
+    "is_active": true
+  },
+  {
+    "id": "kr-ai-structured-output",
+    "role_profile_id": "rp-ai-application-intern",
+    "competency_dimension_id": "cd-ai-prompt-structured-output",
+    "title": "解析并验证结构化输出",
+    "description": "能够定义JSON或Schema等输出契约，解析模型响应，校验必要字段，并在格式不合法或内容不可信时安全失败。",
+    "requirement_type": "responsibility",
+    "importance": "high",
+    "is_common_hard_blocker": false,
+    "expected_evidence": [
+      "使用Schema或类型模型验证模型输出",
+      "包含解析失败、修复限制或拒绝路径"
+    ],
+    "weak_evidence": [
+      "只要求模型返回JSON",
+      "只在成功样例上解析输出"
+    ],
+    "negative_signals": [
+      "未经验证就把模型字段用于业务决策",
+      "格式失败时继续生成部分可信结果"
+    ],
+    "keywords": [
+      "json",
+      "schema",
+      "structured output",
+      "validation"
+    ],
+    "source_id": "ks-ai-microsoft-ai-103",
+    "knowledge_version_id": "kbv-2026-08-1",
+    "review_status": "approved",
+    "is_active": true
+  },
+  {
+    "id": "kr-da-actionable-insight",
+    "competency_dimension_id": "cd-da-business-insight",
+    "title": "把分析结果转化为可行动的业务洞察",
+    "description": "综合数据证据形成与业务问题相关的结论、备选解释和建议，同时明确限制、风险和需要进一步验证的内容。",
+    "requirement_type": "responsibility",
+    "importance": "high",
+    "expected_evidence": [
+      "结论能够对应原始业务问题",
+      "区分事实、解释和建议",
+      "说明限制、替代解释和后续验证"
+    ],
+    "weak_evidence": [
+      "只罗列数字，没有洞察或建议",
+      "建议与分析结果之间缺少证据链"
+    ],
+    "negative_signals": [
+      "把描述性结果写成确定因果",
+      "省略与结论不一致的数据"
+    ],
+    "keywords": [
+      "actionable insight",
+      "recommendation",
+      "business decision",
+      "业务洞察",
+      "行动建议"
+    ],
+    "source_id": "ks-da-onet-bi-analysts",
+    "role_profile_id": "rp-data-analyst-intern",
+    "is_common_hard_blocker": false,
+    "knowledge_version_id": "kbv-2026-08-1",
+    "review_status": "approved",
+    "is_active": true
+  },
+  {
+    "id": "kr-da-business-question-framing",
+    "competency_dimension_id": "cd-da-business-requirements",
+    "title": "把业务问题转化为可验证的分析任务",
+    "description": "与使用者明确问题、决策场景、指标口径、数据范围和交付形式，避免在目标不清时直接开始计算。",
+    "requirement_type": "responsibility",
+    "importance": "high",
+    "expected_evidence": [
+      "说明业务问题、目标使用者和分析输出",
+      "记录指标定义、范围和验收标准",
+      "说明需求变化后的调整过程"
+    ],
+    "weak_evidence": [
+      "只写完成数据分析，没有说明分析要回答的问题",
+      "只描述工具操作，没有业务目标或使用者"
+    ],
+    "negative_signals": [
+      "在口径未确认时直接输出结论",
+      "把所有相关数据都纳入而不说明范围"
+    ],
+    "keywords": [
+      "analysis question",
+      "business requirement",
+      "metric definition",
+      "业务问题",
+      "需求澄清"
+    ],
+    "source_id": "ks-da-skills-england-st0118",
+    "role_profile_id": "rp-data-analyst-intern",
+    "is_common_hard_blocker": false,
+    "knowledge_version_id": "kbv-2026-08-1",
+    "review_status": "approved",
+    "is_active": true
+  },
+  {
+    "id": "kr-da-continuous-improvement",
+    "competency_dimension_id": "cd-da-communication-collaboration",
+    "title": "根据反馈持续改进分析和报告",
+    "description": "主动检查重复工作、使用反馈和数据问题，逐步改进查询、Dashboard、报告或交付流程。",
+    "requirement_type": "implicit",
+    "importance": "medium",
+    "expected_evidence": [
+      "根据使用反馈调整指标或展示",
+      "减少重复手工步骤或错误",
+      "说明改进前后的差异"
+    ],
+    "weak_evidence": [
+      "只写持续优化，没有具体变化",
+      "把一次格式调整描述为流程改进"
+    ],
+    "negative_signals": [
+      "报告问题反复出现但未复盘",
+      "只追求自动化而未验证结果质量"
+    ],
+    "keywords": [
+      "continuous improvement",
+      "iteration",
+      "process improvement",
+      "持续改进",
+      "迭代"
+    ],
+    "source_id": "ks-da-amazon-bi-intern-3149400",
+    "role_profile_id": "rp-data-analyst-intern",
+    "is_common_hard_blocker": false,
+    "knowledge_version_id": "kbv-2026-08-1",
+    "review_status": "approved",
+    "is_active": true
+  },
+  {
+    "id": "kr-da-data-cleaning-quality",
+    "competency_dimension_id": "cd-da-data-quality",
+    "title": "识别并处理数据质量问题",
+    "description": "检查缺失、重复、异常、类型、编码和口径差异，保留处理规则并说明清洗可能造成的信息损失。",
+    "requirement_type": "responsibility",
+    "importance": "high",
+    "expected_evidence": [
+      "列出数据质量检查和处理规则",
+      "比较清洗前后的记录数或关键分布",
+      "说明无法确定的数据如何保留或标记"
+    ],
+    "weak_evidence": [
+      "只写进行了数据清洗",
+      "删除异常值但没有规则或影响说明"
+    ],
+    "negative_signals": [
+      "静默删除大量记录",
+      "用默认值填充但不说明依据"
+    ],
+    "keywords": [
+      "data cleaning",
+      "data quality",
+      "missing values",
+      "数据清洗",
+      "异常值"
+    ],
+    "source_id": "ks-da-skills-england-st0118",
+    "role_profile_id": "rp-data-analyst-intern",
+    "is_common_hard_blocker": false,
+    "knowledge_version_id": "kbv-2026-08-1",
+    "review_status": "approved",
+    "is_active": true
+  },
+  {
+    "id": "kr-da-data-governance-privacy",
+    "competency_dimension_id": "cd-da-governance-privacy",
+    "title": "遵守数据访问、隐私和治理边界",
+    "description": "根据角色和用途使用数据，识别敏感字段、共享范围和访问限制，并在报告或Dashboard中避免不必要暴露。",
+    "requirement_type": "responsibility",
+    "importance": "high",
+    "expected_evidence": [
+      "说明访问权限和最小必要原则",
+      "对敏感字段采取脱敏或聚合处理",
+      "记录来源、用途和共享限制"
+    ],
+    "weak_evidence": [
+      "只写遵守隐私规范，没有具体处理",
+      "使用匿名数据但未说明匿名方式"
+    ],
+    "negative_signals": [
+      "在公开文件中保留个人敏感信息",
+      "绕过权限或复制超出用途范围的数据"
+    ],
+    "keywords": [
+      "data governance",
+      "privacy",
+      "access control",
+      "数据治理",
+      "隐私"
+    ],
+    "source_id": "ks-da-microsoft-pl-300",
+    "role_profile_id": "rp-data-analyst-intern",
+    "is_common_hard_blocker": false,
+    "knowledge_version_id": "kbv-2026-08-1",
+    "review_status": "approved",
+    "is_active": true
+  },
+  {
+    "id": "kr-da-data-transformation-joins",
+    "competency_dimension_id": "cd-da-transformation-modeling",
+    "title": "转换、关联并组织分析数据",
+    "description": "选择适当数据类型、键、关联方式、分组和转换步骤，形成粒度一致且能够支持指标计算的分析数据集。",
+    "requirement_type": "responsibility",
+    "importance": "high",
+    "expected_evidence": [
+      "说明表之间的键和关系",
+      "展示合并、追加、分组或转换步骤",
+      "核对关联前后记录数和粒度"
+    ],
+    "weak_evidence": [
+      "只写合并了多个表",
+      "没有说明连接关系或数据粒度"
+    ],
+    "negative_signals": [
+      "多对多关联造成重复计算但未识别",
+      "使用不一致类型或时间粒度直接拼接"
+    ],
+    "keywords": [
+      "data transformation",
+      "join",
+      "data model",
+      "数据转换",
+      "数据关联"
+    ],
+    "source_id": "ks-da-microsoft-pl-300",
+    "role_profile_id": "rp-data-analyst-intern",
+    "is_common_hard_blocker": false,
+    "knowledge_version_id": "kbv-2026-08-1",
+    "review_status": "approved",
+    "is_active": true
+  },
+  {
+    "id": "kr-da-metric-definition",
+    "competency_dimension_id": "cd-da-metrics-statistics",
+    "title": "定义并维护一致的指标口径",
+    "description": "根据业务问题明确指标的分子、分母、时间窗口、对象范围和例外规则，并在报告中保持一致。",
+    "requirement_type": "responsibility",
+    "importance": "high",
+    "expected_evidence": [
+      "给出指标定义和计算规则",
+      "说明时间、对象和过滤范围",
+      "处理不同团队口径冲突并记录决定"
+    ],
+    "weak_evidence": [
+      "只展示指标结果，没有定义",
+      "使用系统现成字段但未确认业务含义"
+    ],
+    "negative_signals": [
+      "同一报告中指标口径变化",
+      "把金额、订单和客户等不同粒度直接比较"
+    ],
+    "keywords": [
+      "kpi",
+      "metric definition",
+      "calculation logic",
+      "指标口径",
+      "计算规则"
+    ],
+    "source_id": "ks-da-apple-japan-data-analyst-intern",
+    "role_profile_id": "rp-data-analyst-intern",
+    "is_common_hard_blocker": false,
+    "knowledge_version_id": "kbv-2026-08-1",
+    "review_status": "approved",
+    "is_active": true
+  },
+  {
+    "id": "kr-da-pattern-anomaly-analysis",
+    "competency_dimension_id": "cd-da-business-insight",
+    "title": "识别趋势、分群和异常变化",
+    "description": "通过时间、类别、地区或用户等合理切分识别数据模式和异常，并使用核对或补充分析判断其业务意义。",
+    "requirement_type": "responsibility",
+    "importance": "high",
+    "expected_evidence": [
+      "展示趋势、分群或异常识别过程",
+      "比较基线和多个切分维度",
+      "对异常进行数据质量和业务原因核对"
+    ],
+    "weak_evidence": [
+      "只展示一张趋势图，没有分析",
+      "看到波动后直接给出原因"
+    ],
+    "negative_signals": [
+      "忽略季节性、口径变化或样本变化",
+      "只挑选最显著的结果而不检查其他分组"
+    ],
+    "keywords": [
+      "anomaly",
+      "segmentation",
+      "trend",
+      "异常分析",
+      "分群"
+    ],
+    "source_id": "ks-da-microsoft-pl-300",
+    "role_profile_id": "rp-data-analyst-intern",
+    "is_common_hard_blocker": false,
+    "knowledge_version_id": "kbv-2026-08-1",
+    "review_status": "approved",
+    "is_active": true
+  },
+  {
+    "id": "kr-da-python-r-analysis",
+    "competency_dimension_id": "cd-da-analysis-tools",
+    "title": "使用Python、R或等价工具进行可重复分析",
+    "description": "在数据规模、重复性或分析复杂度需要时，使用脚本化工具完成处理、计算或可视化，并保留可运行步骤。",
+    "requirement_type": "preferred",
+    "importance": "medium",
+    "expected_evidence": [
+      "使用脚本处理真实或合成数据",
+      "说明代码输入、输出和验证方式",
+      "将重复手工步骤转为可运行流程"
+    ],
+    "weak_evidence": [
+      "只列Python或R技能",
+      "只有课堂代码，没有说明分析问题"
+    ],
+    "negative_signals": [
+      "代码无法运行或依赖私人文件",
+      "使用复杂库但无法解释结果"
+    ],
+    "keywords": [
+      "python",
+      "r",
+      "scripting",
+      "pandas",
+      "脚本分析"
+    ],
+    "source_id": "ks-da-google-data-analytics-certificate",
+    "role_profile_id": "rp-data-analyst-intern",
+    "is_common_hard_blocker": false,
+    "knowledge_version_id": "kbv-2026-08-1",
+    "review_status": "approved",
+    "is_active": true
+  },
+  {
+    "id": "kr-da-reproducible-analysis",
+    "competency_dimension_id": "cd-da-analysis-tools",
+    "title": "保留可复查和可重复的分析过程",
+    "description": "记录数据来源、查询或处理步骤、参数、版本和输出，使他人能够复核主要结果并识别变更影响。",
+    "requirement_type": "responsibility",
+    "importance": "medium",
+    "expected_evidence": [
+      "保留查询、脚本或步骤说明",
+      "记录数据时间范围和版本",
+      "使用固定输入复查主要输出"
+    ],
+    "weak_evidence": [
+      "只有最终图表或PPT，没有处理过程",
+      "依赖未记录的手工步骤"
+    ],
+    "negative_signals": [
+      "无法重现结果来源",
+      "修改数据后未重新核对报告"
+    ],
+    "keywords": [
+      "reproducible analysis",
+      "documentation",
+      "validation",
+      "可复现",
+      "分析记录"
+    ],
+    "source_id": "ks-da-onet-bi-analysts",
+    "role_profile_id": "rp-data-analyst-intern",
+    "is_common_hard_blocker": false,
+    "knowledge_version_id": "kbv-2026-08-1",
+    "review_status": "approved",
+    "is_active": true
+  },
+  {
+    "id": "kr-da-spreadsheet-analysis",
+    "competency_dimension_id": "cd-da-analysis-tools",
+    "title": "使用电子表格完成基础分析与核对",
+    "description": "能够使用电子表格或等价工具完成筛选、透视、计算、图表和结果核对，并说明何时应改用更可复现的分析方式。",
+    "requirement_type": "preferred",
+    "importance": "medium",
+    "expected_evidence": [
+      "使用透视、公式或图表解决具体问题",
+      "说明输入、计算逻辑和核对步骤",
+      "识别手工操作的规模和复现限制"
+    ],
+    "weak_evidence": [
+      "只列Excel或电子表格名称",
+      "只有截图，没有计算逻辑或结果解释"
+    ],
+    "negative_signals": [
+      "依赖无法追踪的手工复制粘贴",
+      "公式和口径未记录"
+    ],
+    "keywords": [
+      "excel",
+      "spreadsheet",
+      "pivot table",
+      "电子表格",
+      "透视表"
+    ],
+    "source_id": "ks-da-apple-japan-data-analyst-intern",
+    "role_profile_id": "rp-data-analyst-intern",
+    "is_common_hard_blocker": false,
+    "knowledge_version_id": "kbv-2026-08-1",
+    "review_status": "approved",
+    "is_active": true
+  },
+  {
+    "id": "kr-da-sql-data-extraction",
+    "competency_dimension_id": "cd-da-sql-extraction",
+    "title": "使用SQL或等价查询方式提取分析数据",
+    "description": "能够在指导下从结构化数据源筛选、关联、聚合和核对数据，为后续分析形成可解释的数据集。",
+    "requirement_type": "must_have",
+    "importance": "high",
+    "expected_evidence": [
+      "包含筛选、关联或聚合逻辑的查询示例",
+      "说明字段、粒度和结果核对方式",
+      "展示查询结果如何服务具体分析"
+    ],
+    "weak_evidence": [
+      "只在技能栏列出SQL",
+      "只使用现成导出文件，未说明数据提取过程"
+    ],
+    "negative_signals": [
+      "无法说明连接条件或聚合粒度",
+      "未检查重复行或查询结果范围"
+    ],
+    "keywords": [
+      "join",
+      "query",
+      "sql",
+      "aggregation",
+      "数据提取",
+      "关联查询"
+    ],
+    "source_id": "ks-da-amazon-bi-intern-3149400",
+    "role_profile_id": "rp-data-analyst-intern",
+    "is_common_hard_blocker": false,
+    "knowledge_version_id": "kbv-2026-08-1",
+    "review_status": "approved",
+    "is_active": true
+  },
+  {
+    "id": "kr-da-stakeholder-collaboration",
+    "competency_dimension_id": "cd-da-communication-collaboration",
+    "title": "与业务和数据伙伴协作澄清需求",
+    "description": "通过提问、示例和阶段反馈理解信息需求，与相关团队核对数据可用性、指标口径和交付优先级。",
+    "requirement_type": "responsibility",
+    "importance": "medium",
+    "expected_evidence": [
+      "说明如何从模糊需求形成分析范围",
+      "记录与业务或数据团队的关键确认",
+      "根据反馈修改输出并说明原因"
+    ],
+    "weak_evidence": [
+      "只写跨部门协作，没有本人动作",
+      "将收到需求后完成报表作为全部协作过程"
+    ],
+    "negative_signals": [
+      "未确认指标含义就交付结果",
+      "把数据不可用问题归因于其他团队而不提出替代方案"
+    ],
+    "keywords": [
+      "stakeholder",
+      "cross-functional",
+      "requirements gathering",
+      "跨团队协作",
+      "需求沟通"
+    ],
+    "source_id": "ks-da-amazon-bi-intern-3149400",
+    "role_profile_id": "rp-data-analyst-intern",
+    "is_common_hard_blocker": false,
+    "knowledge_version_id": "kbv-2026-08-1",
+    "review_status": "approved",
+    "is_active": true
+  },
+  {
+    "id": "kr-da-statistical-reasoning",
+    "competency_dimension_id": "cd-da-metrics-statistics",
+    "title": "使用基础统计推理解释数据",
+    "description": "能够使用描述统计、分组比较、比例或简单趋势方法，并区分相关、差异和因果结论的适用边界。",
+    "requirement_type": "responsibility",
+    "importance": "medium",
+    "expected_evidence": [
+      "选择与问题匹配的统计量或比较方法",
+      "说明样本、时间范围和不确定性",
+      "避免把相关关系直接表述为因果"
+    ],
+    "weak_evidence": [
+      "只报告平均值或百分比，没有基准和分布",
+      "使用复杂方法但无法解释选择原因"
+    ],
+    "negative_signals": [
+      "选择性展示支持预设结论的结果",
+      "忽略样本规模或基线变化"
+    ],
+    "keywords": [
+      "descriptive statistics",
+      "comparison",
+      "correlation",
+      "统计分析",
+      "趋势比较"
+    ],
+    "source_id": "ks-da-google-data-analytics-certificate",
+    "role_profile_id": "rp-data-analyst-intern",
+    "is_common_hard_blocker": false,
+    "knowledge_version_id": "kbv-2026-08-1",
+    "review_status": "approved",
+    "is_active": true
+  },
+  {
+    "id": "kr-da-visualization-dashboard",
+    "competency_dimension_id": "cd-da-visualization-storytelling",
+    "title": "制作适合受众的可视化、报告或Dashboard",
+    "description": "根据比较、趋势、构成或分布等问题选择图表和交互方式，突出关键结论并避免误导性编码。",
+    "requirement_type": "responsibility",
+    "importance": "high",
+    "expected_evidence": [
+      "说明图表选择与业务问题的关系",
+      "展示筛选、钻取或摘要层级",
+      "标注口径、时间范围和必要限制"
+    ],
+    "weak_evidence": [
+      "只展示美观图表，没有问题或结论",
+      "堆叠大量图表但没有信息层级"
+    ],
+    "negative_signals": [
+      "截断坐标轴或使用不恰当图形夸大差异",
+      "Dashboard指标口径不一致"
+    ],
+    "keywords": [
+      "dashboard",
+      "data visualization",
+      "tableau",
+      "数据可视化",
+      "仪表板"
+    ],
+    "source_id": "ks-da-apple-japan-data-analyst-intern",
+    "role_profile_id": "rp-data-analyst-intern",
+    "is_common_hard_blocker": false,
+    "knowledge_version_id": "kbv-2026-08-1",
+    "review_status": "approved",
+    "is_active": true
+  },
+  {
+    "id": "kr-ts-analysis-tools",
+    "competency_dimension_id": "cd-ts-quantitative-support",
+    "title": "使用电子表格、数据或研究工具提高可复查性",
+    "description": "能够使用电子表格、基础查询、可视化、文献管理或协作工具整理证据和比较结果，但不把具体产品当作统一门槛。",
+    "requirement_type": "preferred",
+    "importance": "medium",
+    "expected_evidence": [
+      "使用工具保留数据、公式和来源",
+      "输出可复查的比较表或图表",
+      "说明工具选择与任务的关系"
+    ],
+    "weak_evidence": [
+      "只列出工具名称，没有产出",
+      "展示模板但没有真实分析逻辑"
+    ],
+    "negative_signals": [
+      "用自动生成结果替代来源核验",
+      "把工具熟练度等同于战略判断质量"
+    ],
+    "keywords": [
+      "analysis tools",
+      "spreadsheet",
+      "research database",
+      "分析工具",
+      "研究工具"
+    ],
+    "source_id": "ks-ts-amazon-wwtd-strategy-2990306",
+    "role_profile_id": "rp-technology-strategy-intern",
+    "is_common_hard_blocker": false,
+    "knowledge_version_id": "kbv-2026-08-1",
+    "review_status": "approved",
+    "is_active": true
+  },
+  {
+    "id": "kr-ts-assumption-ambiguity",
+    "competency_dimension_id": "cd-ts-strategic-framing",
+    "title": "在信息不完整时显式管理假设",
+    "description": "面对快速变化或信息缺口时记录假设、信心、触发条件和后续验证，不因不确定性停止工作，也不伪装确定性。",
+    "requirement_type": "implicit",
+    "importance": "medium",
+    "expected_evidence": [
+      "列出关键假设与证据等级",
+      "说明结论在何种条件下变化",
+      "提出低成本验证动作"
+    ],
+    "weak_evidence": [
+      "笼统写“存在不确定性”但没有影响分析",
+      "只给乐观或悲观单一判断"
+    ],
+    "negative_signals": [
+      "隐藏不利信息以保持结论稳定",
+      "把未知直接填补为事实"
+    ],
+    "keywords": [
+      "ambiguity",
+      "assumption log",
+      "confidence",
+      "假设管理",
+      "不确定性"
+    ],
+    "source_id": "ks-ts-openai-competitive-intelligence",
+    "role_profile_id": "rp-technology-strategy-intern",
+    "is_common_hard_blocker": false,
+    "knowledge_version_id": "kbv-2026-08-1",
+    "review_status": "approved",
+    "is_active": true
+  },
+  {
+    "id": "kr-ts-competitive-ecosystem-analysis",
+    "competency_dimension_id": "cd-ts-competitive-intelligence",
+    "title": "分析竞争者、产品与生态位置",
+    "description": "比较竞争者能力、产品方向、定价或商业模式信号、合作关系和价值链位置，形成可核验的机会与风险判断。",
+    "requirement_type": "responsibility",
+    "importance": "high",
+    "expected_evidence": [
+      "使用一致框架比较多个对象",
+      "结合产品、客户、市场和生态信号",
+      "说明差异、机会、风险及证据强度"
+    ],
+    "weak_evidence": [
+      "只做功能清单或公司简介",
+      "把营销口径当作已验证能力"
+    ],
+    "negative_signals": [
+      "获取或披露不应使用的非公开信息",
+      "把竞争判断写成无条件事实"
+    ],
+    "keywords": [
+      "competitive intelligence",
+      "ecosystem mapping",
+      "market landscape",
+      "竞争分析",
+      "生态分析"
+    ],
+    "source_id": "ks-ts-openai-competitive-intelligence",
+    "role_profile_id": "rp-technology-strategy-intern",
+    "is_common_hard_blocker": false,
+    "knowledge_version_id": "kbv-2026-08-1",
+    "review_status": "approved",
+    "is_active": true
+  },
+  {
+    "id": "kr-ts-executive-synthesis",
+    "competency_dimension_id": "cd-ts-executive-communication",
+    "title": "形成面向决策的技术战略分析摘要",
+    "description": "将复杂研究压缩为结论、依据、影响、选项、风险和下一步，针对受众控制深度并保留可追溯附件。",
+    "requirement_type": "responsibility",
+    "importance": "high",
+    "expected_evidence": [
+      "先呈现决策问题和核心结论",
+      "用证据支撑影响和建议",
+      "保留假设、风险与下一步验证"
+    ],
+    "weak_evidence": [
+      "材料信息很多但没有决策主线",
+      "只写结论，不提供证据和限制"
+    ],
+    "negative_signals": [
+      "用确定语气掩盖证据不足",
+      "删除与推荐相冲突的重要信息"
+    ],
+    "keywords": [
+      "decision memo",
+      "executive brief",
+      "strategic narrative",
+      "决策简报",
+      "战略叙事"
+    ],
+    "source_id": "ks-ts-openai-competitive-intelligence",
+    "role_profile_id": "rp-technology-strategy-intern",
+    "is_common_hard_blocker": false,
+    "knowledge_version_id": "kbv-2026-08-1",
+    "review_status": "approved",
+    "is_active": true
+  },
+  {
+    "id": "kr-ts-horizon-scanning",
+    "competency_dimension_id": "cd-ts-technology-landscape",
+    "title": "持续扫描技术、市场和生态变化信号",
+    "description": "使用稳定的主题、来源和更新节奏发现新技术、产品发布、合作、投资、监管和采用信号，并记录信号强度。",
+    "requirement_type": "responsibility",
+    "importance": "high",
+    "expected_evidence": [
+      "建立主题与来源清单",
+      "记录信号时间、变化和可信度",
+      "说明哪些变化值得进一步验证"
+    ],
+    "weak_evidence": [
+      "偶尔收集新闻但没有更新机制",
+      "只关注单一公司或单一媒体"
+    ],
+    "negative_signals": [
+      "把热点热度直接等同于战略价值",
+      "使用过期信息却不标注日期"
+    ],
+    "keywords": [
+      "horizon scanning",
+      "market signals",
+      "trend monitoring",
+      "技术扫描",
+      "趋势监测"
+    ],
+    "source_id": "ks-ts-uk-futures-toolkit-2024",
+    "role_profile_id": "rp-technology-strategy-intern",
+    "is_common_hard_blocker": false,
+    "knowledge_version_id": "kbv-2026-08-1",
+    "review_status": "approved",
+    "is_active": true
+  },
+  {
+    "id": "kr-ts-option-assessment",
+    "competency_dimension_id": "cd-ts-option-evaluation",
+    "title": "使用一致标准评估技术战略选项",
+    "description": "比较自研、采购、合作、试点、等待或退出等选项的价值、成本、速度、可逆性、风险和能力要求。",
+    "requirement_type": "responsibility",
+    "importance": "high",
+    "expected_evidence": [
+      "定义可比较的评价标准",
+      "呈现关键权衡和敏感因素",
+      "说明推荐条件与不推荐条件"
+    ],
+    "weak_evidence": [
+      "只给出一个偏好选项，没有比较",
+      "评价标准随选项变化"
+    ],
+    "negative_signals": [
+      "把供应商选择等同于完整战略",
+      "忽略退出成本和不可逆风险"
+    ],
+    "keywords": [
+      "build buy partner",
+      "option assessment",
+      "trade-off",
+      "战略选项",
+      "技术选择"
+    ],
+    "source_id": "ks-ts-oecd-sti-outlook-2025",
+    "role_profile_id": "rp-technology-strategy-intern",
+    "is_common_hard_blocker": false,
+    "knowledge_version_id": "kbv-2026-08-1",
+    "review_status": "approved",
+    "is_active": true
+  },
+  {
+    "id": "kr-ts-quantitative-support",
+    "competency_dimension_id": "cd-ts-quantitative-support",
+    "title": "用基础数据和估算支持战略判断",
+    "description": "使用市场规模、采用率、成本、性能、KPI或简单敏感性分析支撑比较，并明确数据质量和估算边界。",
+    "requirement_type": "responsibility",
+    "importance": "medium",
+    "expected_evidence": [
+      "给出计算口径和数据来源",
+      "使用区间或敏感性分析表达不确定性",
+      "核对数量级和关键假设"
+    ],
+    "weak_evidence": [
+      "只有精确数字，没有口径和来源",
+      "只展示图表，不说明与决策的关系"
+    ],
+    "negative_signals": [
+      "伪精确估算掩盖高不确定性",
+      "选择性使用支持偏好的指标"
+    ],
+    "keywords": [
+      "KPI",
+      "sensitivity analysis",
+      "estimation",
+      "定量支持",
+      "敏感性分析"
+    ],
+    "source_id": "ks-ts-amazon-wwtd-strategy-2990306",
+    "role_profile_id": "rp-technology-strategy-intern",
+    "is_common_hard_blocker": false,
+    "knowledge_version_id": "kbv-2026-08-1",
+    "review_status": "approved",
+    "is_active": true
+  },
+  {
+    "id": "kr-ts-research-governance",
+    "competency_dimension_id": "cd-ts-research-governance",
+    "title": "遵守保密、引用和研究边界",
+    "description": "在公开资料、内部材料和访谈信息之间保持清晰边界，遵守访问授权、引用、利益冲突和敏感信息处理要求。",
+    "requirement_type": "responsibility",
+    "importance": "medium",
+    "expected_evidence": [
+      "区分公开、内部和受限信息",
+      "记录引用与授权边界",
+      "对敏感结论采用必要的访问控制"
+    ],
+    "weak_evidence": [
+      "材料来源不清或缺少引用",
+      "把内部观点与公开事实混写"
+    ],
+    "negative_signals": [
+      "披露机密或受限信息",
+      "使用不当手段获取竞争信息"
+    ],
+    "keywords": [
+      "confidentiality",
+      "research ethics",
+      "source attribution",
+      "研究治理",
+      "保密边界"
+    ],
+    "source_id": "ks-ts-oecd-sti-outlook-2025",
+    "role_profile_id": "rp-technology-strategy-intern",
+    "is_common_hard_blocker": false,
+    "knowledge_version_id": "kbv-2026-08-1",
+    "review_status": "approved",
+    "is_active": true
+  },
+  {
+    "id": "kr-ts-scenario-roadmapping",
+    "competency_dimension_id": "cd-ts-foresight-roadmapping",
+    "title": "用情景和路线图表达未来路径",
+    "description": "在不确定条件下构建少量有区分度的情景，连接关键驱动因素、里程碑、决策点和验证动作。",
+    "requirement_type": "responsibility",
+    "importance": "medium",
+    "expected_evidence": [
+      "说明情景的关键驱动因素",
+      "设置里程碑、决策点和验证信号",
+      "区分愿景、预测与可执行路线图"
+    ],
+    "weak_evidence": [
+      "只有时间表，没有假设和决策点",
+      "把单一路径写成确定预测"
+    ],
+    "negative_signals": [
+      "用情景包装未经验证的结论",
+      "路线图与资源和依赖脱节"
+    ],
+    "keywords": [
+      "roadmap",
+      "scenario planning",
+      "backcasting",
+      "路线图",
+      "情景分析"
+    ],
+    "source_id": "ks-ts-uk-futures-toolkit-2024",
+    "role_profile_id": "rp-technology-strategy-intern",
+    "is_common_hard_blocker": false,
+    "knowledge_version_id": "kbv-2026-08-1",
+    "review_status": "approved",
+    "is_active": true
+  },
+  {
+    "id": "kr-ts-source-grounded-research",
+    "competency_dimension_id": "cd-ts-evidence-synthesis",
+    "title": "基于可追溯来源完成结构化技术研究",
+    "description": "能够记录来源、时间、适用范围和不确定性，交叉验证关键信号，并把事实、推断和建议分开表达。",
+    "requirement_type": "must_have",
+    "importance": "high",
+    "expected_evidence": [
+      "为核心判断提供多个相互独立的来源",
+      "记录来源日期、范围和限制",
+      "明确区分事实、假设与推断"
+    ],
+    "weak_evidence": [
+      "只给出结论或链接列表，没有验证过程",
+      "大量使用二手摘要但不核对原始来源"
+    ],
+    "negative_signals": [
+      "虚构来源、数据或访问结果",
+      "把单一企业材料包装成行业共识"
+    ],
+    "keywords": [
+      "evidence synthesis",
+      "source validation",
+      "traceability",
+      "来源核验",
+      "证据综合"
+    ],
+    "source_id": "ks-ts-jrc-technology-foresight-2023",
+    "role_profile_id": "rp-technology-strategy-intern",
+    "is_common_hard_blocker": false,
+    "knowledge_version_id": "kbv-2026-08-1",
+    "review_status": "approved",
+    "is_active": true
+  },
+  {
+    "id": "kr-ts-stakeholder-collaboration",
+    "competency_dimension_id": "cd-ts-executive-communication",
+    "title": "与技术和业务伙伴协作澄清假设",
+    "description": "通过访谈、评审和反馈与技术、产品、业务、运营或管理者澄清术语、需求、分歧和决策约束。",
+    "requirement_type": "responsibility",
+    "importance": "medium",
+    "expected_evidence": [
+      "准备结构化问题并记录关键结论",
+      "确认术语、假设和未决事项",
+      "根据反馈更新分析而非只记录意见"
+    ],
+    "weak_evidence": [
+      "只描述参加会议，没有自己的研究动作",
+      "收集意见但不处理矛盾"
+    ],
+    "negative_signals": [
+      "以职位高低代替证据判断",
+      "把未确认观点写成组织结论"
+    ],
+    "keywords": [
+      "cross-functional",
+      "stakeholder interview",
+      "alignment",
+      "跨团队协作",
+      "需求澄清"
+    ],
+    "source_id": "ks-ts-amazon-wwtd-strategy-2990306",
+    "role_profile_id": "rp-technology-strategy-intern",
+    "is_common_hard_blocker": false,
+    "knowledge_version_id": "kbv-2026-08-1",
+    "review_status": "approved",
+    "is_active": true
+  },
+  {
+    "id": "kr-ts-strategic-question-framing",
+    "competency_dimension_id": "cd-ts-strategic-framing",
+    "title": "把技术议题转化为可回答的战略问题",
+    "description": "明确决策对象、时间范围、利益相关者、关键假设和成功标准，避免从工具或热门概念直接跳到结论。",
+    "requirement_type": "responsibility",
+    "importance": "high",
+    "expected_evidence": [
+      "说明研究服务的具体决策",
+      "定义范围、时间和比较对象",
+      "列出关键假设与待验证问题"
+    ],
+    "weak_evidence": [
+      "题目宽泛且没有决策对象",
+      "直接以某项技术为答案开始研究"
+    ],
+    "negative_signals": [
+      "先确定结论再选择证据",
+      "忽略组织资源和约束"
+    ],
+    "keywords": [
+      "decision question",
+      "problem framing",
+      "research brief",
+      "战略问题",
+      "研究范围"
+    ],
+    "source_id": "ks-ts-oecd-sti-outlook-2025",
+    "role_profile_id": "rp-technology-strategy-intern",
+    "is_common_hard_blocker": false,
+    "knowledge_version_id": "kbv-2026-08-1",
+    "review_status": "approved",
+    "is_active": true
+  },
+  {
+    "id": "kr-ts-tech-business-translation",
+    "competency_dimension_id": "cd-ts-tech-business-translation",
+    "title": "把技术能力和限制转译为业务影响",
+    "description": "将技术的能力边界、依赖条件和演进方向转化为客户价值、运营流程、成本、风险、组织能力和采用条件。",
+    "requirement_type": "responsibility",
+    "importance": "high",
+    "expected_evidence": [
+      "连接技术特征与具体业务机制",
+      "说明依赖、成本、风险和采用条件",
+      "区分短期试点价值与规模化价值"
+    ],
+    "weak_evidence": [
+      "只解释技术原理，没有业务影响",
+      "只写收益，没有限制和代价"
+    ],
+    "negative_signals": [
+      "承诺技术必然产生业务结果",
+      "忽略数据、流程或组织依赖"
+    ],
+    "keywords": [
+      "business impact",
+      "technology translation",
+      "value creation",
+      "技术业务转译",
+      "业务影响"
+    ],
+    "source_id": "ks-ts-amazon-wwtd-strategy-2990306",
+    "role_profile_id": "rp-technology-strategy-intern",
+    "is_common_hard_blocker": false,
+    "knowledge_version_id": "kbv-2026-08-1",
+    "review_status": "approved",
+    "is_active": true
+  },
+  {
+    "id": "kr-ts-technical-domain-learning",
+    "competency_dimension_id": "cd-ts-tech-business-translation",
+    "title": "快速建立目标技术领域的基础理解",
+    "description": "能够通过官方文档、专家交流和小型验证理解关键概念、架构、限制与应用条件，并知道何时需要技术专家复核。",
+    "requirement_type": "preferred",
+    "importance": "medium",
+    "expected_evidence": [
+      "说明学习路径和来源选择",
+      "用自己的语言解释能力与限制",
+      "识别需要专家确认的技术问题"
+    ],
+    "weak_evidence": [
+      "只复述术语或市场宣传",
+      "只依赖单一课程或二手文章"
+    ],
+    "negative_signals": [
+      "在缺乏依据时声称具备专家判断",
+      "把咨询相邻岗位要求扩张为深度工程门槛"
+    ],
+    "keywords": [
+      "domain learning",
+      "technical literacy",
+      "digital strategy",
+      "技术理解",
+      "快速学习"
+    ],
+    "source_id": "ks-ts-bcg-digital-consultant",
+    "role_profile_id": "rp-technology-strategy-intern",
+    "is_common_hard_blocker": false,
+    "knowledge_version_id": "kbv-2026-08-1",
+    "review_status": "approved",
+    "is_active": true
+  },
+  {
+    "id": "kr-ts-technology-landscape-mapping",
+    "competency_dimension_id": "cd-ts-technology-landscape",
+    "title": "构建技术版图并识别成熟度与替代路径",
+    "description": "围绕能力、成熟度、应用条件、参与者和替代方案组织技术版图，标出已知差异和信息空白。",
+    "requirement_type": "responsibility",
+    "importance": "high",
+    "expected_evidence": [
+      "给出分类维度和纳入标准",
+      "比较技术成熟度与适用条件",
+      "标出替代路径和信息空白"
+    ],
+    "weak_evidence": [
+      "罗列技术名称但没有比较维度",
+      "只按供应商宣传材料分类"
+    ],
+    "negative_signals": [
+      "把概念相近当成能力等价",
+      "使用静态版图表达确定的未来"
+    ],
+    "keywords": [
+      "technology landscape",
+      "maturity",
+      "taxonomy",
+      "技术版图",
+      "成熟度"
+    ],
+    "source_id": "ks-ts-jrc-technology-foresight-2023",
+    "role_profile_id": "rp-technology-strategy-intern",
+    "is_common_hard_blocker": false,
+    "knowledge_version_id": "kbv-2026-08-1",
+    "review_status": "approved",
+    "is_active": true
+  }
+]

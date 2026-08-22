@@ -1,0 +1,24 @@
+{
+  "title": "AI应用开发实习生",
+  "company": "示例科技",
+  "language": "zh",
+  "summary": "面向初级候选人的AI应用开发岗位。",
+  "requirements": [
+    {
+      "requirement_text": "熟悉 Python",
+      "source_text": "熟悉 Python",
+      "source_start_char": 0,
+      "source_end_char": 9,
+      "requirement_type": "must_have",
+      "category": "technical_skill",
+      "importance": "high",
+      "mandatory": true,
+      "hard_condition_kind": "none",
+      "normalized_key": "python"
+    }
+  ],
+  "keywords": [
+    "Python"
+  ],
+  "extraction_warnings": []
+}

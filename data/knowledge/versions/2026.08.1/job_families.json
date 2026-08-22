@@ -1,0 +1,45 @@
+[
+  {
+    "id": "jf-ai-application",
+    "code": "ai_application",
+    "name": "AI应用",
+    "description": "面向LLM与AI模型应用、任务工作流、数据处理、评估调试和业务系统集成的应用工程岗位族，不包含基础模型训练研究、纯算法研究或纯内容运营。",
+    "aliases": [
+      "AI application engineering",
+      "applied AI",
+      "generative AI application",
+      "人工智能应用"
+    ],
+    "knowledge_version_id": "kbv-2026-08-1",
+    "is_active": true
+  },
+  {
+    "id": "jf-data-analysis",
+    "code": "data_analysis",
+    "name": "数据分析",
+    "description": "面向业务问题定义、数据提取与清洗、指标口径、分析建模、可视化和洞察表达的分析岗位族，不包含以生产数据管道为核心的数据工程、研究级算法建模或纯报表录入。",
+    "aliases": [
+      "analytics",
+      "business data analysis",
+      "business intelligence analysis",
+      "数据分析"
+    ],
+    "knowledge_version_id": "kbv-2026-08-1",
+    "is_active": true
+  },
+  {
+    "id": "jf-technology-strategy",
+    "code": "technology_strategy",
+    "name": "技术战略",
+    "description": "面向技术趋势研究、竞争与生态分析、技术—业务转译、战略选项评估、情景与路线图支持的岗位族，不包含以编码交付为核心的软件工程、纯产品运营、证券投资研究或独立承担公司级战略决策。",
+    "aliases": [
+      "digital strategy",
+      "strategic technology research",
+      "tech strategy",
+      "technology intelligence",
+      "technology strategy"
+    ],
+    "knowledge_version_id": "kbv-2026-08-1",
+    "is_active": true
+  }
+]

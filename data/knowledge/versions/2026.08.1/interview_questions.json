@@ -1,0 +1,633 @@
+[
+  {
+    "id": "iq-ai-agent-workflow",
+    "role_profile_id": "rp-ai-application-intern",
+    "competency_dimension_id": "cd-ai-agent-workflow",
+    "question": "请用一个任务说明你会如何判断采用固定工作流、单次模型调用还是Agent，并描述停止与回退条件。",
+    "question_type": "technical",
+    "expected_points": [
+      "任务复杂度与可预测性",
+      "工具和状态边界",
+      "可观察与可调试性",
+      "停止、失败和人工确认"
+    ],
+    "follow_up_questions": [
+      "如果工具连续失败，你会如何限制影响？",
+      "哪些步骤应保留为确定性代码？"
+    ],
+    "difficulty": "advanced",
+    "source_id": "ks-ai-anthropic-effective-agents",
+    "knowledge_version_id": "kbv-2026-08-1",
+    "review_status": "approved",
+    "is_active": true
+  },
+  {
+    "id": "iq-ai-business-framing",
+    "role_profile_id": "rp-ai-application-intern",
+    "competency_dimension_id": "cd-ai-business-understanding",
+    "question": "面对一个模糊的业务需求，你会如何判断是否适合使用AI，并把它转化为可验收的应用任务？",
+    "question_type": "business_scenario",
+    "expected_points": [
+      "目标用户和业务目标",
+      "输入、输出与约束",
+      "成功标准",
+      "非目标和替代方案"
+    ],
+    "follow_up_questions": [
+      "什么情况下你会建议不用AI？"
+    ],
+    "difficulty": "medium",
+    "source_id": "ks-ai-google-managing-ml-projects",
+    "knowledge_version_id": "kbv-2026-08-1",
+    "review_status": "approved",
+    "is_active": true
+  },
+  {
+    "id": "iq-ai-collaboration-retrospective",
+    "role_profile_id": "rp-ai-application-intern",
+    "competency_dimension_id": "cd-ai-communication-collaboration",
+    "question": "请介绍一次反馈改变你技术方案的经历，并说明你如何区分个人贡献与团队成果。",
+    "question_type": "collaboration_motivation",
+    "expected_points": [
+      "反馈来源和分歧",
+      "本人行动",
+      "方案变化",
+      "结果与复盘"
+    ],
+    "follow_up_questions": [
+      "如果你不同意反馈，会如何验证自己的判断？"
+    ],
+    "difficulty": "basic",
+    "source_id": "ks-ai-openai-emerging-talent",
+    "knowledge_version_id": "kbv-2026-08-1",
+    "review_status": "approved",
+    "is_active": true
+  },
+  {
+    "id": "iq-ai-evaluation",
+    "role_profile_id": "rp-ai-application-intern",
+    "competency_dimension_id": "cd-ai-evaluation-debugging",
+    "question": "如果要比较两个AI应用方案，你会怎样设计样例、评价标准和人工检查，使结论可以复查？",
+    "question_type": "technical",
+    "expected_points": [
+      "任务相关测试集",
+      "自动指标与人工评估",
+      "边界和失败样例",
+      "固定比较条件"
+    ],
+    "follow_up_questions": [
+      "当自动指标与人工判断冲突时怎么办？"
+    ],
+    "difficulty": "medium",
+    "source_id": "ks-ai-google-managing-ml-projects",
+    "knowledge_version_id": "kbv-2026-08-1",
+    "review_status": "approved",
+    "is_active": true
+  },
+  {
+    "id": "iq-ai-model-choice",
+    "role_profile_id": "rp-ai-application-intern",
+    "competency_dimension_id": "cd-ai-model-api-integration",
+    "question": "为一个AI应用选择模型或服务时，你会比较哪些因素，而不是只选择能力最强的模型？",
+    "question_type": "business_scenario",
+    "expected_points": [
+      "任务质量",
+      "延迟与成本",
+      "数据和部署边界",
+      "接口稳定性"
+    ],
+    "follow_up_questions": [
+      "如果服务出现限流或超时，你会如何设计？"
+    ],
+    "difficulty": "medium",
+    "source_id": "ks-ai-microsoft-ai-103",
+    "knowledge_version_id": "kbv-2026-08-1",
+    "review_status": "approved",
+    "is_active": true
+  },
+  {
+    "id": "iq-ai-output-failure",
+    "role_profile_id": "rp-ai-application-intern",
+    "competency_dimension_id": "cd-ai-evaluation-debugging",
+    "question": "当模型输出偶发缺字段或内容不稳定时，你会怎样复现、定位并验证修复？",
+    "question_type": "technical",
+    "expected_points": [
+      "保留复现输入和配置",
+      "区分模型与应用代码问题",
+      "受控修改",
+      "回归验证"
+    ],
+    "follow_up_questions": [
+      "什么情况下应拒绝结果而不是继续修复？"
+    ],
+    "difficulty": "medium",
+    "source_id": "ks-ai-openai-applied-agent",
+    "knowledge_version_id": "kbv-2026-08-1",
+    "review_status": "approved",
+    "is_active": true
+  },
+  {
+    "id": "iq-ai-privacy",
+    "role_profile_id": "rp-ai-application-intern",
+    "competency_dimension_id": "cd-ai-responsible-ai-security",
+    "question": "如果业务输入可能包含敏感信息，你会怎样决定哪些数据可以发送给模型服务、哪些内容可以记录日志？",
+    "question_type": "gap_validation",
+    "expected_points": [
+      "数据分类与最小必要",
+      "脱敏和访问控制",
+      "服务数据政策",
+      "安全日志与失败提示"
+    ],
+    "follow_up_questions": [
+      "如果无法确认第三方服务的数据处理边界，你会怎么做？"
+    ],
+    "difficulty": "medium",
+    "source_id": "ks-ai-nist-rmf-1-0",
+    "knowledge_version_id": "kbv-2026-08-1",
+    "review_status": "approved",
+    "is_active": true
+  },
+  {
+    "id": "iq-ai-project-deep-dive",
+    "role_profile_id": "rp-ai-application-intern",
+    "competency_dimension_id": "cd-ai-python-engineering",
+    "question": "请选择一个AI应用项目，说明目标、本人实现的数据流、关键失败、评估结果和仍然存在的限制。",
+    "question_type": "project_deep_dive",
+    "expected_points": [
+      "具体目标和个人职责",
+      "可运行实现",
+      "失败与调试",
+      "评价结果与限制"
+    ],
+    "follow_up_questions": [
+      "如果重新开始，你会优先改变什么？"
+    ],
+    "difficulty": "medium",
+    "source_id": "ks-ai-openai-applied-agent",
+    "knowledge_version_id": "kbv-2026-08-1",
+    "review_status": "approved",
+    "is_active": true
+  },
+  {
+    "id": "iq-ai-structured-output",
+    "role_profile_id": "rp-ai-application-intern",
+    "competency_dimension_id": "cd-ai-prompt-structured-output",
+    "question": "请设计一个需要JSON输出的模型调用，并说明Schema校验失败时应用应如何处理。",
+    "question_type": "technical",
+    "expected_points": [
+      "字段与类型约束",
+      "解析和语义校验",
+      "有限修复或重试",
+      "失败关闭"
+    ],
+    "follow_up_questions": [
+      "格式正确但内容无依据时怎么办？"
+    ],
+    "difficulty": "medium",
+    "source_id": "ks-ai-microsoft-ai-103",
+    "knowledge_version_id": "kbv-2026-08-1",
+    "review_status": "approved",
+    "is_active": true
+  },
+  {
+    "id": "iq-ai-tradeoff",
+    "role_profile_id": "rp-ai-application-intern",
+    "competency_dimension_id": "cd-ai-model-application",
+    "question": "请举例说明一个AI应用中的质量、成本、延迟或风险取舍，以及你如何用证据做决定。",
+    "question_type": "project_deep_dive",
+    "expected_points": [
+      "明确的约束",
+      "可比较的方案",
+      "评价证据",
+      "残余风险"
+    ],
+    "follow_up_questions": [
+      "业务目标变化后，这个选择会如何变化？"
+    ],
+    "difficulty": "medium",
+    "source_id": "ks-ai-google-managing-ml-projects",
+    "knowledge_version_id": "kbv-2026-08-1",
+    "review_status": "approved",
+    "is_active": true
+  },
+  {
+    "id": "iq-da-data-quality",
+    "competency_dimension_id": "cd-da-data-quality",
+    "question": "面对缺失值、重复记录和异常值同时存在的数据，你会怎样决定处理顺序并验证清洗没有扭曲结果？",
+    "question_type": "technical",
+    "expected_points": [
+      "质量检查和问题分级",
+      "规则依据",
+      "清洗前后比较",
+      "不确定数据的保留或标记"
+    ],
+    "follow_up_questions": [
+      "业务方无法确认异常值含义时怎么办？"
+    ],
+    "difficulty": "medium",
+    "source_id": "ks-da-microsoft-pl-300",
+    "role_profile_id": "rp-data-analyst-intern",
+    "knowledge_version_id": "kbv-2026-08-1",
+    "review_status": "approved",
+    "is_active": true
+  },
+  {
+    "id": "iq-da-insight-recommendation",
+    "competency_dimension_id": "cd-da-business-insight",
+    "question": "发现某个渠道转化率下降后，你会如何从数据事实走到解释和行动建议，同时避免过度推断？",
+    "question_type": "business_scenario",
+    "expected_points": [
+      "基线和分群分析",
+      "数据质量与口径核对",
+      "多个备选解释",
+      "验证计划和建议边界"
+    ],
+    "follow_up_questions": [
+      "什么证据会让你撤回原来的解释？"
+    ],
+    "difficulty": "medium",
+    "source_id": "ks-da-onet-bi-analysts",
+    "role_profile_id": "rp-data-analyst-intern",
+    "knowledge_version_id": "kbv-2026-08-1",
+    "review_status": "approved",
+    "is_active": true
+  },
+  {
+    "id": "iq-da-metric-definition",
+    "competency_dimension_id": "cd-da-metrics-statistics",
+    "question": "两个团队对同一个核心指标给出不同结果时，你会如何定位口径差异并形成可复用的定义？",
+    "question_type": "business_scenario",
+    "expected_points": [
+      "分子分母和对象范围",
+      "时间和过滤条件",
+      "数据来源与刷新时间",
+      "确认和记录机制"
+    ],
+    "follow_up_questions": [
+      "无法统一口径时，报告中应如何呈现？"
+    ],
+    "difficulty": "medium",
+    "source_id": "ks-da-apple-japan-data-analyst-intern",
+    "role_profile_id": "rp-data-analyst-intern",
+    "knowledge_version_id": "kbv-2026-08-1",
+    "review_status": "approved",
+    "is_active": true
+  },
+  {
+    "id": "iq-da-privacy-access",
+    "competency_dimension_id": "cd-da-governance-privacy",
+    "question": "分析数据包含个人或敏感字段时，你会如何决定访问范围、处理方式和报告展示粒度？",
+    "question_type": "gap_validation",
+    "expected_points": [
+      "用途和最小必要",
+      "权限与敏感字段识别",
+      "脱敏或聚合",
+      "共享和保留边界"
+    ],
+    "follow_up_questions": [
+      "无法确认某个字段能否使用时怎么办？"
+    ],
+    "difficulty": "medium",
+    "source_id": "ks-da-microsoft-pl-300",
+    "role_profile_id": "rp-data-analyst-intern",
+    "knowledge_version_id": "kbv-2026-08-1",
+    "review_status": "approved",
+    "is_active": true
+  },
+  {
+    "id": "iq-da-project-deep-dive",
+    "competency_dimension_id": "cd-da-business-insight",
+    "question": "请选择一个数据分析项目，说明业务问题、数据来源、本人处理步骤、主要发现、结论限制和最终交付。",
+    "question_type": "project_deep_dive",
+    "expected_points": [
+      "业务问题与个人职责",
+      "数据获取和质量处理",
+      "分析方法和结果",
+      "限制与后续行动"
+    ],
+    "follow_up_questions": [
+      "哪一步最可能改变最终结论？"
+    ],
+    "difficulty": "medium",
+    "source_id": "ks-da-skills-england-st0118",
+    "role_profile_id": "rp-data-analyst-intern",
+    "knowledge_version_id": "kbv-2026-08-1",
+    "review_status": "approved",
+    "is_active": true
+  },
+  {
+    "id": "iq-da-scope-boundary",
+    "competency_dimension_id": "cd-da-business-requirements",
+    "question": "什么情况下一个数据分析任务已经超出常规描述和诊断分析，需要数据工程、数据科学或运筹优化支持？",
+    "question_type": "gap_validation",
+    "expected_points": [
+      "生产数据管道与可靠性需求",
+      "预测或因果方法复杂度",
+      "优化模型和约束条件",
+      "清楚的协作与升级边界"
+    ],
+    "follow_up_questions": [
+      "你会如何向业务方说明需要其他角色参与？"
+    ],
+    "difficulty": "medium",
+    "source_id": "ks-da-bls-operations-research",
+    "role_profile_id": "rp-data-analyst-intern",
+    "knowledge_version_id": "kbv-2026-08-1",
+    "review_status": "approved",
+    "is_active": true
+  },
+  {
+    "id": "iq-da-sql-query",
+    "competency_dimension_id": "cd-da-sql-extraction",
+    "question": "需要计算每月活跃客户和复购率时，你会如何确定数据粒度、连接条件和查询核对步骤？",
+    "question_type": "technical",
+    "expected_points": [
+      "客户和订单粒度",
+      "连接与去重规则",
+      "时间窗口和指标定义",
+      "结果核对"
+    ],
+    "follow_up_questions": [
+      "多对多关联导致数量放大时如何定位？"
+    ],
+    "difficulty": "medium",
+    "source_id": "ks-da-amazon-bi-intern-3149400",
+    "role_profile_id": "rp-data-analyst-intern",
+    "knowledge_version_id": "kbv-2026-08-1",
+    "review_status": "approved",
+    "is_active": true
+  },
+  {
+    "id": "iq-da-stakeholder-ambiguity",
+    "competency_dimension_id": "cd-da-communication-collaboration",
+    "question": "业务方只说“帮我看看数据有什么问题”时，你会先问哪些问题？",
+    "question_type": "collaboration_motivation",
+    "expected_points": [
+      "使用者和决策场景",
+      "问题范围和优先级",
+      "指标和数据可用性",
+      "交付形式和时间"
+    ],
+    "follow_up_questions": [
+      "需求中途变化时你会如何处理？"
+    ],
+    "difficulty": "basic",
+    "source_id": "ks-da-amazon-bi-intern-3149400",
+    "role_profile_id": "rp-data-analyst-intern",
+    "knowledge_version_id": "kbv-2026-08-1",
+    "review_status": "approved",
+    "is_active": true
+  },
+  {
+    "id": "iq-da-statistical-interpretation",
+    "competency_dimension_id": "cd-da-metrics-statistics",
+    "question": "某项指标平均值提高，但不同用户组结果差异很大，你会如何继续分析并向非技术受众解释？",
+    "question_type": "technical",
+    "expected_points": [
+      "分布和分组比较",
+      "样本规模和基线",
+      "平均值的限制",
+      "清楚且不过度的表达"
+    ],
+    "follow_up_questions": [
+      "什么情况下需要更严格的实验或统计方法？"
+    ],
+    "difficulty": "medium",
+    "source_id": "ks-da-google-data-analytics-certificate",
+    "role_profile_id": "rp-data-analyst-intern",
+    "knowledge_version_id": "kbv-2026-08-1",
+    "review_status": "approved",
+    "is_active": true
+  },
+  {
+    "id": "iq-da-visualization-choice",
+    "competency_dimension_id": "cd-da-visualization-storytelling",
+    "question": "同一组数据需要分别给管理者和一线团队使用时，你会如何调整图表、信息层级和交互方式？",
+    "question_type": "business_scenario",
+    "expected_points": [
+      "受众和决策任务",
+      "图表选择",
+      "摘要与明细层级",
+      "口径和限制提示"
+    ],
+    "follow_up_questions": [
+      "怎样判断一个Dashboard信息过载？"
+    ],
+    "difficulty": "medium",
+    "source_id": "ks-da-microsoft-pl-300",
+    "role_profile_id": "rp-data-analyst-intern",
+    "knowledge_version_id": "kbv-2026-08-1",
+    "review_status": "approved",
+    "is_active": true
+  },
+  {
+    "id": "iq-ts-competitive-landscape",
+    "competency_dimension_id": "cd-ts-competitive-intelligence",
+    "question": "需要比较三个技术平台的战略位置时，你会选择哪些维度，并如何避免只做功能清单？",
+    "question_type": "business_scenario",
+    "expected_points": [
+      "比较对象和维度",
+      "客户与生态信号",
+      "能力和限制",
+      "机会风险与证据边界"
+    ],
+    "follow_up_questions": [
+      "定价信息不完整时如何处理？"
+    ],
+    "difficulty": "medium",
+    "source_id": "ks-ts-openai-competitive-intelligence",
+    "role_profile_id": "rp-technology-strategy-intern",
+    "knowledge_version_id": "kbv-2026-08-1",
+    "review_status": "approved",
+    "is_active": true
+  },
+  {
+    "id": "iq-ts-horizon-scanning",
+    "competency_dimension_id": "cd-ts-technology-landscape",
+    "question": "你会如何设计一个每月更新的技术趋势扫描机制，同时避免被热点和重复信息淹没？",
+    "question_type": "business_scenario",
+    "expected_points": [
+      "主题与来源范围",
+      "信号记录和分级",
+      "去重与验证",
+      "升级和更新节奏"
+    ],
+    "follow_up_questions": [
+      "怎样判断一个弱信号值得深入研究？"
+    ],
+    "difficulty": "medium",
+    "source_id": "ks-ts-uk-futures-toolkit-2024",
+    "role_profile_id": "rp-technology-strategy-intern",
+    "knowledge_version_id": "kbv-2026-08-1",
+    "review_status": "approved",
+    "is_active": true
+  },
+  {
+    "id": "iq-ts-option-tradeoff",
+    "competency_dimension_id": "cd-ts-option-evaluation",
+    "question": "面对自研、采购和合作试点三种选项，你会如何建立比较框架并形成有条件的建议？",
+    "question_type": "business_scenario",
+    "expected_points": [
+      "一致评价标准",
+      "速度成本能力风险",
+      "可逆性和敏感因素",
+      "推荐条件与退出条件"
+    ],
+    "follow_up_questions": [
+      "管理者只关心短期速度时，你会怎样回应？"
+    ],
+    "difficulty": "medium",
+    "source_id": "ks-ts-oecd-sti-outlook-2025",
+    "role_profile_id": "rp-technology-strategy-intern",
+    "knowledge_version_id": "kbv-2026-08-1",
+    "review_status": "approved",
+    "is_active": true
+  },
+  {
+    "id": "iq-ts-project-deep-dive",
+    "competency_dimension_id": "cd-ts-strategic-framing",
+    "question": "请选择一项你做过的技术或行业研究，说明最初决策问题、研究范围、关键假设、证据和最终建议。",
+    "question_type": "project_deep_dive",
+    "expected_points": [
+      "决策问题与范围",
+      "来源和方法",
+      "关键判断与限制",
+      "建议和后续验证"
+    ],
+    "follow_up_questions": [
+      "如果时间缩短一半，你会保留哪些研究步骤？"
+    ],
+    "difficulty": "medium",
+    "source_id": "ks-ts-jrc-technology-foresight-2023",
+    "role_profile_id": "rp-technology-strategy-intern",
+    "knowledge_version_id": "kbv-2026-08-1",
+    "review_status": "approved",
+    "is_active": true
+  },
+  {
+    "id": "iq-ts-quantitative-estimate",
+    "competency_dimension_id": "cd-ts-quantitative-support",
+    "question": "只有不完整的市场和成本数据时，你会怎样做一个可供讨论的初步估算？",
+    "question_type": "technical",
+    "expected_points": [
+      "口径和数据来源",
+      "区间与假设",
+      "数量级核对",
+      "敏感性和限制"
+    ],
+    "follow_up_questions": [
+      "哪些数字不适合给出单点估计？"
+    ],
+    "difficulty": "medium",
+    "source_id": "ks-ts-amazon-wwtd-strategy-2990306",
+    "role_profile_id": "rp-technology-strategy-intern",
+    "knowledge_version_id": "kbv-2026-08-1",
+    "review_status": "approved",
+    "is_active": true
+  },
+  {
+    "id": "iq-ts-research-governance",
+    "competency_dimension_id": "cd-ts-research-governance",
+    "question": "研究中同时使用公开网页、内部访谈和受限材料时，你会如何管理引用、分享范围和结论表达？",
+    "question_type": "gap_validation",
+    "expected_points": [
+      "信息分类",
+      "引用与授权",
+      "访问控制",
+      "事实和内部观点分离"
+    ],
+    "follow_up_questions": [
+      "竞争信息来源不明确时如何处理？"
+    ],
+    "difficulty": "medium",
+    "source_id": "ks-ts-oecd-sti-outlook-2025",
+    "role_profile_id": "rp-technology-strategy-intern",
+    "knowledge_version_id": "kbv-2026-08-1",
+    "review_status": "approved",
+    "is_active": true
+  },
+  {
+    "id": "iq-ts-scenario-roadmap",
+    "competency_dimension_id": "cd-ts-foresight-roadmapping",
+    "question": "某项技术未来两年可能快速成熟，也可能受监管和成本限制。请说明你会如何构建情景和阶段路线图。",
+    "question_type": "business_scenario",
+    "expected_points": [
+      "关键驱动因素",
+      "有区分度的情景",
+      "里程碑和决策点",
+      "验证信号与调整机制"
+    ],
+    "follow_up_questions": [
+      "怎样避免把情景分析写成预测？"
+    ],
+    "difficulty": "medium",
+    "source_id": "ks-ts-uk-futures-toolkit-2024",
+    "role_profile_id": "rp-technology-strategy-intern",
+    "knowledge_version_id": "kbv-2026-08-1",
+    "review_status": "approved",
+    "is_active": true
+  },
+  {
+    "id": "iq-ts-source-validation",
+    "competency_dimension_id": "cd-ts-evidence-synthesis",
+    "question": "两个可信来源对同一项技术的成熟度判断不一致时，你会如何核验并在报告中表达？",
+    "question_type": "technical",
+    "expected_points": [
+      "来源目的和时间",
+      "定义与样本差异",
+      "交叉验证",
+      "信心和不确定性表达"
+    ],
+    "follow_up_questions": [
+      "什么情况下你会暂不下结论？"
+    ],
+    "difficulty": "medium",
+    "source_id": "ks-ts-jrc-technology-foresight-2023",
+    "role_profile_id": "rp-technology-strategy-intern",
+    "knowledge_version_id": "kbv-2026-08-1",
+    "review_status": "approved",
+    "is_active": true
+  },
+  {
+    "id": "iq-ts-stakeholder-ambiguity",
+    "competency_dimension_id": "cd-ts-executive-communication",
+    "question": "业务负责人说“帮我看看这个技术值不值得做”，你会先问哪些问题？",
+    "question_type": "collaboration_motivation",
+    "expected_points": [
+      "决策对象",
+      "业务场景和受众",
+      "时间资源约束",
+      "成功标准和风险"
+    ],
+    "follow_up_questions": [
+      "技术负责人和业务负责人定义不同怎么办？"
+    ],
+    "difficulty": "basic",
+    "source_id": "ks-ts-bcg-digital-consultant",
+    "role_profile_id": "rp-technology-strategy-intern",
+    "knowledge_version_id": "kbv-2026-08-1",
+    "review_status": "approved",
+    "is_active": true
+  },
+  {
+    "id": "iq-ts-tech-business-translation",
+    "competency_dimension_id": "cd-ts-tech-business-translation",
+    "question": "请以一项熟悉的技术为例，说明你会怎样把技术能力和限制转化为业务价值、成本、风险与采用条件。",
+    "question_type": "technical",
+    "expected_points": [
+      "技术能力边界",
+      "业务机制",
+      "依赖和成本",
+      "风险与采用条件"
+    ],
+    "follow_up_questions": [
+      "试点成功为什么不一定能规模化？"
+    ],
+    "difficulty": "medium",
+    "source_id": "ks-ts-amazon-wwtd-strategy-2990306",
+    "role_profile_id": "rp-technology-strategy-intern",
+    "knowledge_version_id": "kbv-2026-08-1",
+    "review_status": "approved",
+    "is_active": true
+  }
+]

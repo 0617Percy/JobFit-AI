@@ -1,0 +1,97 @@
+[
+  {
+    "id": "rp-ai-application-intern",
+    "job_family_id": "jf-ai-application",
+    "code": "ai_application_intern",
+    "name": "AI应用实习生",
+    "seniority": "intern",
+    "industry": null,
+    "description": "在指导下使用Python或等价工程工具调用模型服务、设计受约束输入输出、构建基础Agent或任务工作流，并通过评估、调试和安全边界把AI能力接入具体业务场景。该画像排除基础模型训练、纯算法论文研究、GPU训练基础设施、纯前端、纯数据标注、AI内容运营、纯产品管理和高阶MLOps职责。",
+    "aliases": [
+      "AI Engineer Intern (application focus)",
+      "AI Solutions Intern (technical implementation)",
+      "Generative AI Application Intern",
+      "LLM Application Intern"
+    ],
+    "keywords": [
+      "agent",
+      "ai application",
+      "api",
+      "evaluation",
+      "llm",
+      "prompt",
+      "python",
+      "structured output",
+      "workflow",
+      "人工智能应用"
+    ],
+    "knowledge_version_id": "kbv-2026-08-1",
+    "review_status": "approved",
+    "is_active": true
+  },
+  {
+    "id": "rp-data-analyst-intern",
+    "job_family_id": "jf-data-analysis",
+    "code": "data_analyst_intern",
+    "name": "数据分析实习生",
+    "seniority": "intern",
+    "industry": null,
+    "description": "在指导下围绕业务问题提取、清洗和分析数据，维护一致的指标口径，使用SQL、电子表格、Python或可视化工具形成可复查的分析结果，并向业务伙伴说明洞察、限制和建议。该画像排除以生产数据管道为核心的数据工程、研究级机器学习、财务会计、纯报表录入和高阶运筹优化职责。",
+    "aliases": [
+      "Analytics Intern",
+      "Business Data Analyst Intern",
+      "Business Intelligence Intern (analysis focus)",
+      "Operations Analytics Intern",
+      "Reporting Analyst Intern (analysis focus)"
+    ],
+    "keywords": [
+      "analytics",
+      "business intelligence",
+      "dashboard",
+      "data analyst",
+      "data cleaning",
+      "excel",
+      "metrics",
+      "python",
+      "sql",
+      "visualization",
+      "数据分析"
+    ],
+    "knowledge_version_id": "kbv-2026-08-1",
+    "review_status": "approved",
+    "is_active": true
+  },
+  {
+    "id": "rp-technology-strategy-intern",
+    "job_family_id": "jf-technology-strategy",
+    "code": "technology_strategy_intern",
+    "name": "技术战略实习生",
+    "seniority": "intern",
+    "industry": null,
+    "description": "在指导下围绕明确的战略问题收集和核验技术、市场、竞争与生态信息，使用结构化框架比较技术选项、场景和路线图，把技术变化转译为业务影响、风险与下一步验证建议，并形成可追溯的分析材料。该画像排除独立制定公司级战略、纯软件开发、纯产品运营、证券投资建议、政策游说和需要多年资历的高级竞争情报职责。",
+    "aliases": [
+      "Digital Strategy Intern (technology focus)",
+      "Innovation Strategy Intern (technology focus)",
+      "Strategic Technology Research Intern",
+      "Tech Strategy Intern",
+      "Technology Intelligence Intern",
+      "Technology Strategy Analyst Intern"
+    ],
+    "keywords": [
+      "competitive intelligence",
+      "digital strategy",
+      "ecosystem",
+      "foresight",
+      "market landscape",
+      "roadmap",
+      "scenario planning",
+      "strategic research",
+      "technology intelligence",
+      "technology strategy",
+      "技术战略"
+    ],
+    "knowledge_version_id": "kbv-2026-08-1",
+    "review_status": "approved",
+    "is_active": true
+  }
+]
